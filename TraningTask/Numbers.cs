@@ -8,7 +8,7 @@ namespace UniqueNumberArray;
 
 public class Number
 {
-    public void Func(int[] arrayNumbers)
+    public void FindUniqueNumberArray(int[] arrayNumbers)
     {
         if (arrayNumbers.Length % 2 != 0)
         {
@@ -27,7 +27,7 @@ public class Number
                 {
                     numberInArray = arrayNumbers[i];
                     Console.WriteLine();
-                    Console.WriteLine(numberInArray);
+                    Console.WriteLine($"Уникальное число из массива - {numberInArray}");
                     Console.WriteLine();
                 }
             }
@@ -35,7 +35,7 @@ public class Number
         else
         {
             Console.WriteLine();
-            Console.WriteLine("Свободен");
+            Console.WriteLine("Ошибка");
             Console.WriteLine();
         }
     }
